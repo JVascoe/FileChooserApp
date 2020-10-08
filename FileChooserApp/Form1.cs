@@ -37,13 +37,14 @@ namespace FileChooserApp
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                textBox1.Text = openFileDialog1.FileName;
+                fileName.Text = openFileDialog1.FileName;
             }
         }
 
         private void submit_btn_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile(textBox1.Text);
+            Form1Contoller cont1 = new Form1Contoller();
+            cont1.OnSubmit(pictureBox1, fileName.Text);
         }
     }
 }

@@ -32,7 +32,7 @@ namespace FileChooserApp
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.fileName = new System.Windows.Forms.TextBox();
             this.submit_btn = new System.Windows.Forms.Button();
             this.BrowseButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -48,12 +48,12 @@ namespace FileChooserApp
             this.label1.TabIndex = 0;
             this.label1.Text = "Please Enter a File:";
             // 
-            // textBox1
+            // fileName
             // 
-            this.textBox1.Location = new System.Drawing.Point(15, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 20);
-            this.textBox1.TabIndex = 1;
+            this.fileName.Location = new System.Drawing.Point(15, 31);
+            this.fileName.Name = "fileName";
+            this.fileName.Size = new System.Drawing.Size(176, 20);
+            this.fileName.TabIndex = 1;
             // 
             // submit_btn
             // 
@@ -91,7 +91,7 @@ namespace FileChooserApp
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BrowseButton);
             this.Controls.Add(this.submit_btn);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.fileName);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -104,7 +104,7 @@ namespace FileChooserApp
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox fileName;
         private System.Windows.Forms.Button submit_btn;
         private System.Windows.Forms.Button BrowseButton;
         private PictureBox pictureBox1;
